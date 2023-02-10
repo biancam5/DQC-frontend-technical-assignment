@@ -1,6 +1,6 @@
 import { FontIcon, initializeIcons, Stack, Text } from "@fluentui/react";
 import { SurveyFreeText } from "./components/surveys/survey-free-text";
-import TextSearch from "./components/textSearch";
+import TextSearch from "./components/search/textSearch";
 import data from "./data/survey_results.json";
 import { SurveyResult } from "./types/survey";
 initializeIcons();
