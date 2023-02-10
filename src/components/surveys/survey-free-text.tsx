@@ -16,8 +16,10 @@ export const SurveyFreeText: FunctionComponent<SurveyFreeTextProps> = ({
   data,
 }) => {
   const textQuestions = data.questions.filter(
-    (question) => question.type ===  "text"  //   || "number"  This line is commented because I didnt know If add or not the responses  that  are type number, because It will show numbers as a response in the UI . and the exercise says "display  the  free response TEXT" 
+    (question) => question.type ===  "text"  
   );
+
+  
   const items = textQuestions.map((question) => question.responses).flat(1);
   let previousEnd = 0;
   const groups: IGroup[] = textQuestions.map((question, i) => {

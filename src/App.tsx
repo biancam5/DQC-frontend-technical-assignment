@@ -1,5 +1,6 @@
 import { FontIcon, initializeIcons, Stack, Text } from "@fluentui/react";
 import { SurveyFreeText } from "./components/surveys/survey-free-text";
+import TextSearch from "./components/textSearch";
 import data from "./data/survey_results.json";
 import { SurveyResult } from "./types/survey";
 initializeIcons();
@@ -35,8 +36,10 @@ function App() {
         <FontIcon iconName="ChatBot" style={{ marginRight: "5px" }} />
         {happinessScore} / 100
       </h1>
-      <Stack>
+      <Stack> 
+        <TextSearch questions={ data.questions}/>
         <SurveyFreeText data={data as SurveyResult} />
+       
       </Stack>
     </Stack>
   );

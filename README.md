@@ -32,3 +32,6 @@ Your tasks are as follows with increasing levels of complexity
 2. FEATURE: Aggregate all opinion scale questions to get an overall happiness score and display this prominently (see designs).
 
 3. FEATURE: Show all free text responses in a table. These should be grouped by their questions with collapsable headers (see designs).
+
+###  4. EXTRA  task : ( 2 hours )
+ Solve a  problem statement of your choice to demonstrate your coding capabilities. ( For example creating   a new feature for this application).  By the way I createad a client-based full text search  that  you can find it in  `textSearch.txt`  archive .
